@@ -1,12 +1,16 @@
 *{margin: 0; padding: 0;}
-
-
+a{
+    color: #fff;
+}
+a:hover{
+    transition: 0.5s;
+}
 .nav-menu{
-    padding: 5vh 15vw;
+    padding: 5px 120px;
     background-color: white !important;
 }
 .navbar-brand.logo{
-    width: 10vw;
+    width: 15vw;
 }
 .header-left{
     cursor: pointer;
@@ -14,13 +18,67 @@
 .header-left .btn-info{
 
 }
+/*end header*/
+
+/*Content*/
+.banner{
+    padding: 15px 0;
+}
+.banner img{
+    width: 100%;
+}
+
+.title-offer{
+    line-height: 1.5;
+}
+
+
+
+.title-logo-company{
+    width: 30vw;
+    border: 1px solid #6666;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px 40px;
+}
+.title-logo-company a{
+    width: 100%;
+}
+.title-logo-company a img{
+    width: 100%;
+}
+
+.btn-jd{
+    display: flex;
+    flex-direction: column;
+}
+.btn-group.btn-jd div{
+    /* border-radius: 12px; */
+}
+
+
+/*End content*/
+
 
 /* footer */
-.logo-footer{
-
+.logo-footer {
+    width: 100%;
+}
+.logo-footer img{
+    width: 20%;
 }
 
 footer{
     background: #242a30;
     color: white;
+}
+.img-bct{
+    padding: 0;
+}
+a.btn-floating.btn-sm.rgba-white-slight.mx-1 i {
+    font-size: 34px;
+}
+
+.btn.btn-group.img-bct div img {
+    width: 7em;
 }
