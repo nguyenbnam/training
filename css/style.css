@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0;}
+
+
+.nav-menu{
+    padding: 5vh 15vw;
+    background-color: white !important;
+}
+.navbar-brand.logo{
+    width: 10vw;
+}
+.header-left{
+    cursor: pointer;
+}
+.header-left .btn-info{
+
+}
+
+/* footer */
+.logo-footer{
+
+}
+
+footer{
+    background: #242a30;
+    color: white;
+}
