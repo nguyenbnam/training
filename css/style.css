@@ -1,4 +1,11 @@
 *{margin: 0; padding: 0;}
+::selection{
+    
+}
+body, html{
+    scroll-behavior: smooth;
+}
+
 a{
     color: #fff;
 }
@@ -38,8 +45,8 @@ a:hover{
     width: 30vw;
     border: 1px solid #6666;
     border-radius: 10px;
-    margin: 20px 0;
-    padding: 10px 40px;
+    margin: 10px 0 38px 0;
+    padding: 20px;
 }
 .title-logo-company a{
     width: 100%;
@@ -51,11 +58,36 @@ a:hover{
 .btn-jd{
     display: flex;
     flex-direction: column;
+    margin: 0 0;
 }
-.btn-group.btn-jd div{
-    /* border-radius: 12px; */
+#btn-save{
+    border-radius: 12px;
+}
+#btn-apply{
+    border-radius: 12px;
 }
 
+.logo-client{
+    width: 100%;
+}
+.logo-client a{
+    width: 100%;
+}
+.logo-client a img{
+    width: 100%;
+}
+
+/*ads*/
+.ads{
+    width: 100%;
+}
+.ads a{
+    width: 100%;
+}
+.ads a img{
+    width: 100%;
+    border-radius: 10px;
+}
 
 /*End content*/
 
