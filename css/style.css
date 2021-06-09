@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 *{margin: 0; padding: 0;}
-::selection{
-    
-}
 
 body, html{
     scroll-behavior: smooth;
     background: #f5f5f5;
+    overflow-x: hidden;
 }
 
 a{
@@ -18,29 +15,9 @@ a:hover{
 ul{
     list-style-type: disc;
 }
-#menu-top::after{
-    content: "HOT";
-    width: 2em;
-    height: 1em;
-    font-size: 11px;
-    color: #fff;
-    position: absolute;
-    top: 3.65vh;
-    left: 35.9em;
-    margin-top: -1em;
-}
-#menu-top::before{
-    content: "";
-    width: 2em;
-    height: 1em;
-    font-size: 16px;
-    position: absolute;
-    background: #ed143d;
-    border-radius: 10px;
-    top: 4.5vh;
-    left: 28.5vw;
-    margin-top: -1em;
-}
+
+
+/* header */
 .nav-menu{
     margin: 0 auto;
     background-color: #fff;
@@ -49,10 +26,26 @@ ul{
 .navbar-brand.logo{
     width: 15vw;
 }
+.navbar-brand.logo img {
+    width: 80%;
+}
 .header-left{
     cursor: pointer;
 }
 
+.bg-hot{
+    width: 35px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 28.5vw;
+    background: rgb(216, 27, 27);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    font-size: 11px;
+}
 
 /*end header*/
 
@@ -86,7 +79,7 @@ ul{
     width: 30vw;
     border: 1px solid #6666;
     border-radius: 10px;
-    margin: 10px 0 38px 0;
+    margin: auto 10px;
     padding: 20px;
 }
 .title-logo-company a{
@@ -118,6 +111,9 @@ ul{
 .logo-client a img{
     width: 100%;
 }
+.title-apply-jd{
+    margin: auto 0;
+}
 
 /*ads*/
 .ads{
@@ -137,6 +133,11 @@ ul{
 .jd-relarive{
     background: #fff;
 }
+.policy-footer {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
 /*End content*/
 
 
@@ -168,7 +169,14 @@ a.btn-floating.btn-sm.rgba-white-slight.mx-1 i {
 
 @media screen and ( max-width: 768px) {
     .navbar-brand.logo{
-        width: 45vw;
+        width: 30vw;
+        margin: 0 20px;
+    }
+    .navbar-nav {
+        margin: 0 0 0 30px; 
+    }
+    .navbar-toggler.collapsed{
+        margin: 0 20px 0 0;
     }
     .title-logo-company{
         margin:  20px auto;
@@ -176,27 +184,70 @@ a.btn-floating.btn-sm.rgba-white-slight.mx-1 i {
     .branch-company{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
-    .col-2.title-logo-company{
-        
+    .infor-jd{
+        margin: 0 auto;
     }
-    .title-apply-jd{
+    .btn-jd{
+        width: 10em;
+        margin: 10px auto;
 
     }
-    .nav-menu{}
-    .banner{}
-    #menu-top::before{}
-    #menu-top::after{}
-    .logo-company{}
-    .infor-jd{
-    margin: 0 auto;
-}
-    .btn-jd{}
+    
+    /* footer  */
+    .logo-footer img{
+        width: 50%;
+    }
+    .logo-footer-bottom{
+        font-size: 13px;
+    }
+    .policy-footer{
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.5;
+    }
     
 }
-
-@media screen and (max-width: 375px){
+@media screen and (min-width: 375px) and (max-width: 425px){
     .navbar-brand.logo{
-        width: 45vw;
+        margin: 0;
     }
+    .navbar-brand.logo{
+        width: 40vw;
+    }
+    .navbar-toggler.collapsed{
+        /* margin: 0 20px 0 0; */
+    }
+    .navbar-nav {
+        margin: 0 10px;
+    }
+    .general-jd {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .col-4.infor-right{
+        max-width: 100%;
+        margin: 0;
+    }
+    .col-8.jd-relative-general{
+        max-width: 100%;
+    }
+    .col-4.infor-right{
+        padding: 0;
+    }
+    .col-8.title-offer.infor-jd{
+        max-width: 100%;
+    }
+    /* .bg-hot{
+        
+    } */
+}
+@media screen and (max-width: 375px){
+
+    .logo-footer-bottom {
+        font-size: 12px;
+        
+    }   
 }
